@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expert LG Appliance Repair Services | Los Angeles</title>
+
+  <!-- Favicon (оставил прежний base64) -->
+  <link rel="icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADhCAMAAADmr0l2AAAAkFBM..."
+        type="image/png">
+
+  <!-- Basic SEO -->
+  <meta name="description"
+        content="Certified, same‑day LG appliance repair in Los Angeles. 1 000+ happy clients, 10 years of LG‑only expertise. Call (213) 676‑6767 – open 7 days, 7 AM – 11 PM.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+/* ── Base ─────────────────────────────── */
+:root{--lg-red:#d50000;--dark:#121212;}
+body{
+  font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  scroll-behavior:smooth;
+  margin:0;
+}
+.navbar-brand span{color:var(--lg-red);}
+
+/* ── Hero ─────────────────────────────── */
+.hero{
+  background:url("https://wallpapers.com/images/featured/america-86f8kdqdjb94i270.jpg") center/cover no-repeat;
+  min-height: calc(100vh - 56px); /* вычитаем высоту navbar */
+  padding-top: 56px;              /* чтобы контент не ушёл за navbar */
+  position:relative;color:#fff;
+}
+@media (max-width: 576px) {
+  .hero {
+    min-height: auto;
+    padding: 4rem 1rem;
+  }
+}
+.hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.55);}
+.hero-content{position:relative;z-index:2;}
+
+/* ── Utility ──────────────────────────── */
+.section-title{color:var(--lg-red);}
+.icon-box i{font-size:2rem;color:var(--lg-red);}
+.process-step{border-left:4px solid var(--lg-red);padding-left:1rem;}
+.counter{font-size:2.5rem;font-weight:700;color:var(--lg-red);}
+footer{background:var(--dark);color:#bbb;}
+footer a{color:#fff;text-decoration:none;}
+
+/* Call‑now button (mobile only) */
+.call-now{
+  position:fixed;right:20px;bottom:20px;z-index:1000;
+  background:var(--lg-red);color:#fff;border-radius:50%;width:60px;height:60px;
+  display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,.25);
+}
+.call-now:hover{background:#ff3030;color:#fff;text-decoration:none;}
+@media (min-width:768px){.call-now{display:none;}}
+
+/* Scroll‑reveal */
+.reveal-init{opacity:0;transform:translateY(40px);transition:opacity .6s ease-out,transform .6s ease-out;}
+.reveal-show{opacity:1;transform:none;}
+.card.reveal-init{transition:.45s ease-out}
+
+/* Before/After slider */
+.ba-wrapper{position:relative;overflow:hidden;border-radius:.5rem}
+.ba-wrapper img{display:block;width:100%}
+.ba-handle{
+  position:absolute;top:0;bottom:0;left:50%;width:4px;background:var(--lg-red);cursor:ew-resize;
+  box-shadow:0 0 0 9999px rgba(0,0,0,.15);
+}
+.ba-handle::before{
+  content:"↔";position:absolute;top:50%;left:-14px;
+  transform:translateY(-50%);color:#fff;font-size:1.15rem;font-weight:700;
+}
+  </style>
+
+  <!-- LocalBusiness JSON‑LD -->
+  <script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"LocalBusiness",
+ "name":"Expert LG Appliance Repair Services",
+ "image":"https://lgappliancerepairs.com/wp-content/uploads/2025/03/LG-Refrigerator-Repair-services.webp",
+ "telephone":"+12136766767",
+ "email":"service@expertlgrepairla.com",
+ "address":{
+   "@type":"PostalAddress",
+   "streetAddress":"5545 Carlton Way Unit 110",
+   "addressLocality":"Los Angeles",
+   "addressRegion":"CA",
+   "postalCode":"90028",
+   "addressCountry":"US"
+ },
+ "openingHoursSpecification":[{
+   "@type":"OpeningHoursSpecification",
+   "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+   "opens":"07:00","closes":"23:00"
+ }],
+ "areaServed":"Los Angeles County",
+ "url":"https://example.com"
+}
+  </script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
+
+<!-- ░░ NAVBAR ░░ -->
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">LG <span>Appliance Repair</span> LA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navLinks" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#advantages">Why Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Before/After</a></li>
+        <li class="nav-item"><a class="nav-link" href="#easy">Easy Steps</a></li>
+        <li class="nav-item"><a class="nav-link" href="#area">Service Area</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">Tips</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ░░ 1 HERO ░░ -->
+<section id="home" class="hero d-flex align-items-center">
+  <div class="container text-center hero-content">
+    <h1 class="display-4 fw-bold">Fast, Reliable LG Appliance Repair<br>Across Los Angeles</h1>
+    <p class="lead mb-4">Certified technicians · Same‑day service · Genuine LG parts</p>
+    <a href="#contact" class="btn btn-lg btn-danger">Book a Technician Now</a>
+  </div>
+</section>
+
+<!-- ░░ 2 ABOUT ░░ -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">About Us</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="fs-5">
+          Expert LG Appliance Repair Services in Los Angeles is a locally‑owned
+          team dedicated exclusively to LG household appliances. From sleek
+          InstaView™ refrigerators to high‑efficiency TurboWash™ washers, we
+          speak LG’s “native language” and fix issues <em>the first time</em>.
+        </p>
+        <ul>
+          <li>10‑year track record & 4.9★ Google rating</li>
+          <li>Factory‑trained & background‑checked technicians</li>
+          <li>Fully stocked vans — 90 % of jobs finished in one visit</li>
+          <li>Up‑front, flat‑rate pricing / no hidden fees</li>
+        </ul>
+        <a href="about.html" class="btn btn-outline-danger mt-3">Learn&nbsp;More&nbsp;→</a>
+      </div>
+      <div class="col-md-6">
+        <img class="img-fluid rounded"
+             src="https://rivercityappliance.net/wp-app/wp-content/uploads/2021/03/21-04-LG-Washing-Machine-Repair_334763482.jpg"
+             alt="Technician repairing LG washer">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ 3 SERVICES ░░ -->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Our LG Repair Services</h2>
+    <div class="row g-4">
+
+  
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://lgappliancerepairs.com/wp-content/uploads/2025/03/LG-Refrigerator-Repair-services.webp"
+                   class="card-img-top" alt="LG Refrigerator">
+              <div class="card-body">
+                <h5 class="card-title">Refrigerators & Freezers</h5>
+                <p class="card-text">Cooling issues, ice makers, water dispensers, linear compressor errors.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://www.lg.com/us/business/images/laundry/bd00040330/gallery/medium01.jpg"
+                   class="card-img-top" alt="LG Washing Machine">
+              <div class="card-body">
+                <h5 class="card-title">Washers & Dryers</h5>
+                <p class="card-text">LE codes, drum noises, drainage problems, no-heat drying, sensor fixes.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://lgappliancerepairs.com/wp-content/uploads/2025/03/LG-Oven-Repair.webp"
+                   class="card-img-top" alt="LG Oven">
+              <div class="card-body">
+                <h5 class="card-title">Ovens, Ranges & Cooktops</h5>
+                <p class="card-text">Temperature inaccuracies, door issues, glass cooktop cracks, error codes.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://lgappliancerepairs.com/wp-content/uploads/2025/03/LG-Dishwasher-Repair.webp"
+                   class="card-img-top" alt="LG Dishwasher">
+              <div class="card-body">
+                <h5 class="card-title">Dishwashers</h5>
+                <p class="card-text">Water not draining, loud operation, detergent residue, control board swap.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://www.lg.com/content/dam/channel/wcms/sa_en/images/microwaves/mj3965acs_bss9nag_emgf_sa_en_c/gallery/MJ3965ACS_Zoom01_20170706.jpg"
+                   class="card-img-top" alt="LG Microwave">
+              <div class="card-body">
+                <h5 class="card-title">Microwaves</h5>
+                <p class="card-text">No heating, turntable not spinning, sparking, keypad replacement.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://lgappliancerepairs.com/wp-content/uploads/elementor/thumbs/Downdrafts-repair-r3ij3lh5sy9l409t41zazvlqwcryd6tk74g19gchc8.webp"
+                   class="card-img-top" alt="LG Styler">
+              <div class="card-body">
+                <h5 class="card-title">LG Downdrafts Repair</h5>
+                <p class="card-text">Weak suction, fan not operating, lights malfunctioning, or unusual noises.</p>
+              </div>
+            </div>
+          </div>
+    
+    
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://lgappliancerepairs.com/wp-content/uploads/2025/03/Ice-Make-repair-services.webp"
+                   class="card-img-top" alt="LG Styler">
+              <div class="card-body">
+                <h5 class="card-title">LG Ice Maker Repair</h5>
+                <p class="card-text">No ice, slow ice production, clogged water lines, or dispenser not working.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://lgappliancerepairs.com/wp-content/uploads/elementor/thumbs/wine-cooler-repair-services-r3iifvzpfdt8a2pjjt223uz7ihmo80pa9s35i7hya0.webp"
+                   class="card-img-top" alt="LG Styler">
+              <div class="card-body">
+                <h5 class="card-title">LG Wine Cooler Repair</h5>
+                <p class="card-text">Sudden temperature spikes, compressor running constantly, frost buildup, or interior light failures.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://lgappliancerepairs.com/wp-content/uploads/2025/03/LG-Range-Hoods-Repair.webp"
+                   class="card-img-top" alt="LG Styler">
+              <div class="card-body">
+                <h5 class="card-title">LG Range Hoods Repair</h5>
+                <p class="card-text">Poor ventilation, smoke not clearing, fan not running, or excessive noise while in use.</p>
+              </div>
+            </div>
+          </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ░░ 4 WHY CHOOSE US ░░ -->
+<section id="advantages" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Why Customers Choose Us</h2>
+    <div class="row text-center g-4">
+      <div class="col-md-3">
+        <div class="icon-box"><i class="bi bi-award-fill"></i>
+          <h5 class="mt-3">LG Factory Certified</h5>
+          <p>Genuine parts & brand‑specific diagnostics.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="icon-box"><i class="bi bi-lightning-charge-fill"></i>
+          <h5 class="mt-3">Same‑Day Solutions</h5>
+          <p>Call before 2 PM — we’ll arrive <em>today</em>.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="icon-box"><i class="bi bi-cash-stack"></i>
+          <h5 class="mt-3">Transparent Pricing</h5>
+          <p>Flat diagnostic + labor quote approved by you.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="icon-box"><i class="bi bi-shield-lock-fill"></i>
+          <h5 class="mt-3">1‑Year Warranty</h5>
+          <p>Parts & labor coverage for total peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ 5 STATS ░░ -->
+<section id="stats" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Our Track Record</h2>
+    <div class="row text-center g-4">
+      <div class="col-6 col-md-3">
+        <div class="counter" data-count="1000">1 000+</div>
+        <p>Happy Clients</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="counter" data-count="10">10 yrs</div>
+        <p>LG‑Only Expertise</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="counter" data-count="95">95 %</div>
+        <p>First‑Visit Fixes</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="counter" data-count="24">24/7</div>
+        <p>Emergency Support</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ 6 PRICING ░░ -->
+<section id="pricing" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Clear & Simple Pricing</h2>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Diagnostic&nbsp;Visit</h5>
+            <p class="display-6 fw-bold mb-0">$79</p>
+            <p class="text-muted">Waived if you approve the repair.</p>
+            <ul class="list-unstyled small text-start">
+              <li>✓ Full system check‑up</li>
+              <li>✓ Exact quote before work</li>
+              <li>✓ No hidden fees</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-danger">
+          <div class="card-body text-center">
+            <h5 class="card-title">Typical Repairs</h5>
+            <p class="display-6 fw-bold mb-0">$180 – $420</p>
+            <p class="text-muted">Parts + labor, most models.</p>
+            <ul class="list-unstyled small text-start">
+              <li>✓ Includes 1‑year warranty</li>
+              <li>✓ Genuine LG parts</li>
+              <li>✓ Done same day in 90 % of cases</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Compressor Replacement</h5>
+            <p class="display-6 fw-bold mb-0">$620 – $880</p>
+            <p class="text-muted">LG linear & inverter compressors.</p>
+            <ul class="list-unstyled small text-start">
+              <li>✓ Factory‑sealed system work</li>
+              <li>✓ Original compressor kit</li>
+              <li>✓ Includes sealed‑system warranty</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <p class="text-center mt-4">Need an exact quote? <a href="#contact" class="link-danger fw-bold">Book a diagnosis →</a></p>
+  </div>
+</section>
+<section id="easy" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">4 Easy Steps to Get Your LG Appliance Fixed</h2>
+      <p class="text-center mb-5 fs-5">
+        We make LG appliance repair simple and stress-free! Call us, book online,
+        or submit a form—we’re ready to help. With the right tools and stocked
+        parts, we’ll have your appliance running in no time.
+      </p>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="process-step">
+            <h5>1. Reach Out</h5>
+            <p>Call, text, or fill out our form – 24/7 scheduling.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="process-step">
+            <h5>2. Confirm Slot</h5>
+            <p>Choose a 2-hour arrival window that fits your day.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="process-step">
+            <h5>3. On-Site Repair</h5>
+            <p>Certified tech arrives with genuine LG parts & tools.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="process-step">
+            <h5>4. Enjoy Peace of Mind</h5>
+            <p>Your appliance runs like new – backed by a 1-year warranty.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="area" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Proudly Serving Los Angeles County</h2>
+      <p class="text-center mb-4">
+        From Santa Monica to Pasadena, our vans cover every neighborhood —
+        including Westwood, Hollywood, Burbank, Glendale, Long Beach, and the South Bay.
+      </p>
+      <div class="text-center">
+        <img class="img-fluid rounded shadow"
+             src="https://images.pexels.com/photos/15516367/pexels-photo-15516367.jpeg?cs=srgb&dl=pexels-solyartphotos-15516367.jpg&fm=jpg"
+             alt="Los Angeles skyline">
+      </div>
+    </div>
+  </section>
+<!-- ░░ 7 TEAM ░░ -->
+<section id="team" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Meet Our Technicians</h2>
+    <div class="row g-4">
+
+      <div class="col-sm-6 col-lg-3 text-center">
+        <img class="img-fluid rounded-circle mb-3" width="140" height="140"
+             src="https://randomuser.me/api/portraits/men/14.jpg" alt="Lead Technician">
+        <h5>Alex Morales</h5>
+        <p class="small text-muted">Lead Technician · 12 yrs experience</p>
+      </div>
+
+      <div class="col-sm-6 col-lg-3 text-center">
+        <img class="img-fluid rounded-circle mb-3" width="140" height="140"
+             src="https://randomuser.me/api/portraits/women/29.jpg" alt="Tech">
+        <h5>Linda Park</h5>
+        <p class="small text-muted">Sealed‑System Specialist</p>
+      </div>
+
+      <div class="col-sm-6 col-lg-3 text-center">
+        <img class="img-fluid rounded-circle mb-3" width="140" height="140"
+             src="https://randomuser.me/api/portraits/men/67.jpg" alt="Tech">
+        <h5>Mario Díaz</h5>
+        <p class="small text-muted">Laundry Appliance Pro</p>
+      </div>
+
+      <div class="col-sm-6 col-lg-3 text-center">
+        <img class="img-fluid rounded-circle mb-3" width="140" height="140"
+             src="https://randomuser.me/api/portraits/women/55.jpg" alt="CSR">
+        <h5>Sophia Roth</h5>
+        <p class="small text-muted">Customer Care & Scheduling</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ░░ 8 BEFORE/AFTER GALLERY ░░ -->
+<section id="gallery" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Before / After Gallery</h2>
+
+    <!-- example slider -->
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="ba-wrapper shadow reveal-init">
+          <img src="https://www.lg.com/content/dam/channel/wcms/sa_en/images/washing-machines/ws1911xmt_assgnag_emgf_sa_en_c/Z-01.jpg" alt="Broken fridge (before)">
+          <div class="ba-handle" id="baHandle"></div>
+          <img src="https://www.lg.com/content/dam/channel/wcms/sa_en/images/washing-machines/wfv0914xm_assgnag_emgf_sa_en_c/gallery/d-01.jpg" style="position:absolute;top:0;left:0;clip-path:inset(0 0 0 50%)" id="baAfter" alt="Fixed fridge (after)">
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center mt-3 small text-muted">Drag the slider to see the repair result.</p>
+  </div>
+</section>
+
+<!-- ░░ 9 KNOWLEDGE HUB / BLOG ░░ -->
+<section id="blog" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">LG Care & Troubleshooting Tips</h2>
+
+    <div class="row g-4">
+<!-- Article 1 -->
+<div class="col-md-4">
+    <article class="card h-100 shadow-sm">
+      <img src="https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/474358lFN/linear-inverter-hoat-dong-voi-muc-ma-sat-thap.jpg"
+           class="card-img-top" alt="Linear compressor LG fridge" loading="lazy">
+      <div class="card-body">
+        <h5 class="card-title">5 Signs Your LG Linear Compressor Is Failing</h5>
+        <p class="card-text small">
+          Intermittent cooling, clicking noises & error code ER IF? Learn how to diagnose a failing
+          linear compressor before it ruins your groceries.
+        </p>
+        <a href="#contact" class="btn btn-sm btn-outline-danger">Need Help? →</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Article 2 -->
+  <div class="col-md-4">
+    <article class="card h-100 shadow-sm">
+      <img src="https://gscs.lge.com/gscs/support/fileupload/downloadFile.do?fileId=zIgZqzoZ3HNfvciIaQ&portalId=P1"
+           class="card-img-top" alt="LG washer OE code fix" loading="lazy">
+      <div class="card-body">
+        <h5 class="card-title">OE Error on LG Washer? Quick 3-Step Fix</h5>
+        <p class="card-text small">
+          An OE (drain) error can often be cleared without tools. Follow our 3-step guide to check
+          filter, hose and pump before calling a tech.
+        </p>
+        <a href="#contact" class="btn btn-sm btn-outline-danger">Schedule Pro Repair →</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Article 3 -->
+  <div class="col-md-4">
+    <article class="card h-100 shadow-sm">
+      <img src="https://www.caesarsapplianceservice.com/wp-content/uploads/2023/10/how-do-you-fix-a-oven-that-doesnt-cook-evenly.jpeg"
+           class="card-img-top" alt="LG oven calibration" loading="lazy">
+      <div class="card-body">
+        <h5 class="card-title">Calibrating Your LG Oven for Holiday Baking</h5>
+        <p class="card-text small">
+          Cakes coming out under-baked? You can recalibrate most LG ranges in under 10 minutes.
+          We show you how — plus when it’s time to replace the temp sensor.
+        </p>
+        <a href="#contact" class="btn btn-sm btn-outline-danger">Book Oven Service →</a>
+      </div>
+    </article>
+  </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ░░10 FAQ ░░ -->
+<section id="faq" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="q1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
+                Do you use genuine LG parts?
+              </button>
+            </h2>
+            <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes – we source parts directly from LG or authorized distributors, ensuring perfect fit & long-term reliability.
+              </div>
+            </div>
+          </div>
+    
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+                How fast can you arrive?
+              </button>
+            </h2>
+            <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Same-day appointments are available if you call before 2 PM. Emergency service is 24/7.
+              </div>
+            </div>
+          </div>
+    
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">
+                What is your warranty?
+              </button>
+            </h2>
+            <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We provide a full 1-year warranty on both parts and labor for every completed repair.
+              </div>
+            </div>
+          </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4">
+            Are you licensed & insured in California?
+          </button>
+        </h2>
+        <div id="a4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Absolutely. We carry CA State Appliance Contractor License #1082431 and full liability insurance.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ░░11 TESTIMONIALS ░░ -->
+<section id="testimonials" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Happy Customers</h2>
+    <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+  
+            <div class="carousel-item active text-center">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-3" alt="Client">
+              <blockquote class="blockquote">
+                <p>“My LG fridge stopped cooling on a Sunday. They showed up within 3 hours and had it running in 40 minutes. Lifesavers!”</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">Maria L., Santa Monica</figcaption>
+            </div>
+    
+            <div class="carousel-item text-center">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mb-3" alt="Client">
+              <blockquote class="blockquote">
+                <p>“Honest pricing, polite tech, wore boot covers. The washer hasn’t given an LE error ever since.”</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">James K., Glendale</figcaption>
+            </div>
+    
+            <div class="carousel-item text-center">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" class="rounded-circle mb-3" alt="Client">
+              <blockquote class="blockquote">
+                <p>“They fixed my LG gas stove the same day I called. Highly recommend Expert LG Repairs!”</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">Sharon P., Pasadena</figcaption>
+            </div>
+    
+          </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ░░12 CONTACT ░░ -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">Book a Repair</h2>
+    <div class="row">
+      <!-- (левая колонка сохранена) -->
+      <!-- правая: форма + reCAPTCHA placeholder -->
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Jane Doe">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Phone</label>
+            <input type="tel" class="form-control" placeholder="(213) 676‑6767">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Address / ZIP</label>
+            <input type="text" class="form-control" placeholder="90028">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Appliance Model / Issue</label>
+            <textarea class="form-control" rows="3"
+                      placeholder="e.g., LG WM4000H washer – DE code"></textarea>
+          </div>
+          <!-- рекапча можно подключить позже -->
+          <button type="submit" class="btn btn-danger w-100">Request Service</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ BETTER FOOTER ░░ -->
+<footer class="pt-5 pb-4 bg-dark text-light">
+    <div class="container">
+  
+      <!-- верхний ряд : логотип + CTA кнопка -->
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6 text-center text-md-start">
+          <h4 class="fw-bold mb-0">LG <span class="text-danger">Appliance Repair</span> LA</h4>
+          <small class="text-muted">#1 LG‑only service in Greater Los Angeles</small>
+        </div>
+        <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+          <a href="tel:+12136766767" class="btn btn-danger btn-lg"
+             aria-label="Call Expert LG Repair">
+            <i class="bi bi-telephone-fill me-2"></i> (213)&nbsp;676‑6767
+          </a>
+        </div>
+      </div>
+  
+      <hr class="border-secondary opacity-25 mb-4">
+  
+      <!-- 4‑колоночная сетка -->
+      <div class="row gy-4">
+  
+        <!-- 1 : услуги -->
+        <div class="col-12 col-md-5 col-lg-4">
+          <h5 class="text-danger mb-3">LG Repair Services</h5>
+          <div class="row">
+            <ul class="list-unstyled small col-6">
+              <li>Refrigerator Repair</li>
+              <li>Washer Repair</li>
+              <li>Dryer Repair</li>
+              <li>Oven & Range Repair</li>
+              <li>Microwave Repair</li>
+              <li>Dishwasher Repair</li>
+              <li>Ice Maker Repair</li>
+              <li>Wine Cooler Repair</li>
+            </ul>
+            <ul class="list-unstyled small col-6">
+              <li>Cooktop Repair</li>
+              <li>Range Hood Repair</li>
+              <li>Freezer Repair</li>
+              <li>Downdraft Repair</li>
+              <li>Wall Oven Repair</li>
+              <li>LG Styler Service</li>
+              <li>Garbage Disposal</li>
+              <li>Built‑In Grills</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- 2 : быстрые ссылки -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5 class="text-danger mb-3">Quick Links</h5>
+          <ul class="list-unstyled small">
+            <li><a class="text-reset text-decoration-none" href="#about">About Us</a></li>
+            <li><a class="text-reset text-decoration-none" href="#pricing">Pricing</a></li>
+            <li><a class="text-reset text-decoration-none" href="#faq">FAQ</a></li>
+            <li><a class="text-reset text-decoration-none" href="#blog">LG Tips</a></li>
+            <li><a class="text-reset text-decoration-none" href="#contact">Book Repair</a></li>
+            <li><a class="text-reset text-decoration-none" href="#testimonials">Reviews</a></li>
+          </ul>
+        </div>
+  
+        <!-- 3 : контакт + часы -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <h5 class="text-danger mb-3">Contact</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-1"><i class="bi bi-geo-alt-fill me-1 text-danger"></i>
+              770 N Ridgewood Pl,<br>Los Angeles CA 90038
+            </li>
+            <li class="mb-1"><i class="bi bi-envelope-fill me-1 text-danger"></i>
+              <a href="mailto:lgappliancerepairsla@gmail.com"
+                 class="text-reset">service@expertlgrepairla.com</a>
+            </li>
+            <li class="mb-1"><i class="bi bi-clock-fill me-1 text-danger"></i>
+              <strong>Mon – Sun:</strong> 7 AM – 11 PM
+            </li>
+            <li class="mb-1"><i class="bi bi-person-badge-fill me-1 text-danger"></i>
+              CA License #1082431
+            </li>
+          </ul>
+        </div>
+  
+        <!-- 4 : социальные сети + рейтинг -->
+        <div class="col-12 col-lg-3">
+          <h5 class="text-danger mb-3">Stay Connected</h5>
+          <p class="small mb-2">Follow us for maintenance tips & special offers:</p>
+          <a class="btn btn-outline-light btn-sm me-1 mb-2" target="_blank" href="#">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a class="btn btn-outline-light btn-sm me-1 mb-2" target="_blank" href="#">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a class="btn btn-outline-light btn-sm me-1 mb-2" target="_blank" href="#">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a class="btn btn-outline-light btn-sm mb-2" target="_blank" href="#">
+            <i class="bi bi-tiktok"></i>
+          </a>
+  
+          <!-- Google rating badge -->
+          <div class="bg-white rounded mt-3 p-2 d-inline-flex align-items-center shadow-sm">
+            <img src="RateStar.png"
+                 width="20" height="20" alt="">
+            <span class="ms-1 fw-semibold text-dark">4.9</span>
+            <span class="ms-1 small text-muted">/ 5 Google Rating</span>
+          </div>
+        </div>
+      </div><!--/row-->
+  
+      <hr class="border-secondary opacity-25 my-4">
+  
+      <!-- нижняя полоска -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small">
+        <p class="mb-2 mb-md-0">
+          © 2025 Expert LG Appliance Repair LA. All Rights Reserved.
+        </p>
+        <nav class="mb-0">
+          <a class="text-reset text-decoration-none me-3" href="#privacy">Privacy Policy</a>
+          <a class="text-reset text-decoration-none" href="#terms">Terms of Service</a>
+        </nav>
+      </div>
+  
+    </div><!--/container-->
+  </footer>
+  
+<!-- ── FLOATING CALL BUTTON (mobile) ── -->
+<a href="tel:+12136766767" class="call-now" aria-label="Call Expert LG Repair">
+  <i class="bi bi-telephone-fill fs-3"></i>
+</a>
+
+<!-- Bootstrap JS + helpers -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+/* ── Scroll‑reveal intersection observer ── */
+const revealEls=document.querySelectorAll('.reveal-init');
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('reveal-show');io.unobserve(e.target);}
+  });
+},{threshold:.15});
+revealEls.forEach(el=>io.observe(el));
+
+/* ── Counter animation ── */
+const counters=document.querySelectorAll('.counter');
+const io2=new IntersectionObserver(ent=>{
+  ent.forEach(e=>{
+    if(e.isIntersecting){
+      const el=e.target,goal=parseInt(el.dataset.count.replace(/\D/g,''));
+      let n=0,step=Math.ceil(goal/60);
+      const tick=()=>{n+=step;if(n>=goal){el.textContent=goal.toLocaleString();clearInterval(t);}else{el.textContent=n.toLocaleString();}}
+      const t=setInterval(tick,20);
+      io2.unobserve(el);
+    }
+  })
+},{threshold:.6});
+counters.forEach(c=>io2.observe(c));
+
+
+/* ── Before/After simple slider ── */
+const handle=document.getElementById('baHandle');
+if(handle){
+  const after=document.getElementById('baAfter'),wrap=handle.parentElement;
+  const move=e=>{
+    const x=(e.touches?e.touches[0].clientX:e.clientX)-wrap.getBoundingClientRect().left;
+    const pct=Math.max(0,Math.min(100,x/wrap.offsetWidth*100));
+    handle.style.left=pct+'%';
+    after.style.clipPath=`inset(0 0 0 ${pct}%)`;
+  };
+  handle.addEventListener('mousedown',()=>window.addEventListener('mousemove',move));
+  window.addEventListener('mouseup',()=>window.removeEventListener('mousemove',move));
+  handle.addEventListener('touchstart',e=>e.preventDefault(),{passive:false});
+  handle.addEventListener('touchmove',move);
+}
+</script>
+</body>
+</html>
